@@ -1,0 +1,133 @@
+%==== PACKAGES AND OTHER DOCUMENT CONFIGURATIONS  ====%
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.25in,top=0.25in,right=0.25in,bottom=0.25in]{geometry} % Document margins
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome} % For GitHub and LinkedIn symbols
+\usepackage{textcomp} % For mobile phone and email symbols
+% \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{xcolor}  % Required for defining custom colors
+\usepackage{hyperref}
+% Define your custom colors
+% \definecolor{myblue}{RGB}{173, 216, 246}
+% \definecolor{myblue}{RGB}{123, 176, 206}
+\definecolor{myblue}{RGB}{0, 164, 218}
+
+% Set hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=myblue,
+    citecolor=myblue,
+    urlcolor=myblue
+}
+
+\usepackage{hyperref}
+
+%==== Headings ====%
+\name{Amey Sadanand Bhilegaonkar} % Your name
+\address{
+{\faPhone} \href{tel:480{-}616{-}3980}{480{-}616{-}3980} \quad {\faEnvelope} \href{mailto:ameybhilegaonkar3@gmail.com}{ameybhilegaonkar3@gmail.com} \quad {\faGithub} \href{https://github.com/ameygoes}{https://github.com/ameygoes} \quad {\faLinkedin} \href{https://linkedin.com/in/amey{-}bhilegaonkar}{https://linkedin.com/in/amey{-}bhilegaonkar} }
+
+\begin{document}
+
+%===== WORK EXPERIENCE SECTION =====%
+    \begin{rSection}{Work Experience}
+                    \begin{rSubsection}
+                {Software Engineer}{Jan 2020 - Jun 2022}
+                                    {\normalfont{\textit{Winjit Technologies}}}
+                                {\normalfont{\textit{Pune, India}}}
+                                    \item Developed and maintained 10+ RESTful APIs and distributed services, enhancing system scalability and performance, resulting in a 30\% increase in application efficiency.
+                                    \item Led a cross{-}functional team of 12 to design a dynamic form generation solution with customizable CSS, reducing development time by 87.5\% and improving UI consistency.
+                                    \item Optimized large{-}scale databases by implementing indexing and query optimization techniques, achieving a 20\% reduction in data retrieval times.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                {Research Intern}{Mar 2019 - Aug 2019}
+                                    {\normalfont{\textit{IMATMI, Robbinsville}}}
+                                {\normalfont{\textit{New Jersey (Remote)}}}
+                                    \item Conducted research and developed machine learning models to streamline HR processes, increasing talent management efficiency by 25\%.
+                                    \item Created a 'goals and action plan generation' tool for employees, facilitating professional growth and improving performance review processes by 15\%.
+                                    \item Collaborated with cross{-}functional teams to integrate analytical tools into existing HR systems, enhancing data{-}driven decision{-}making capabilities.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                {Data Engineer {-} II}{June 2019 - July 2022}
+                                    {\normalfont{\textit{Publicis Sapient}}}
+                                {\normalfont{\textit{Bangalore, India}}}
+                                    \item Engineered complex ETL pipelines using Apache Spark, optimizing data processing from diverse sources, which improved data availability by 40\%.
+                                    \item Revamped real{-}time data streaming solutions with Apache Spark and GCP Cloud Run, supporting over 30 million daily transactions and increasing revenue by 15\%.
+                                    \item Enhanced database performance by optimizing queries and tuning indexes, resulting in a 20\% reduction in query execution time.
+                            \end{rSubsection}
+            \end{rSection}
+
+%==== EDUCATION SECTION ====%
+\begin{rSection}{Education}
+                        \textbf{Arizona State University, Tempe, USA} \hfill {August 2022 - May 2024} \\
+                            {Masters of Science in Computer Science}
+                         
+             
+         
+                        \textbf{Pune Institute of Computer Technology, Pune, India} \hfill {July 2015 - May 2019} \\
+                            {Bachelors of Engineering in Electronics and Telecommunications}
+                         
+             
+         
+    \end{rSection}
+
+% ==== PROJECTS SECTION =====%
+    \begin{rSection}{Projects}
+                    \begin{rSubsection}
+                                    {Search Engine for All file types {-} Opportunity Hackathon {-} Meta Sponsored}
+                                {\normalfont{ - }}{}{}
+                                    \item Implemented Elasticsearch to achieve millisecond response times, enhancing user experience by providing rapid search results.
+                                    \item Converted diverse file types into vector embeddings, ensuring seamless and low{-}latency search capabilities across platforms.
+                                    \item Led the development of a Python FAST API, optimizing data access and retrieval, which improved system efficiency by 40\%.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                                    {Scalable Data Processing Pipeline {-} Neo4J, Docker, Kafka and Minikube}
+                                {\normalfont{ - }}{}{}
+                                    \item Designed a scalable data processing pipeline using Kubernetes and Docker, increasing data handling capacity by 200\%.
+                                    \item Orchestrated Kafka and Apache Zookeeper setup with Minikube, enhancing data flow management and reducing latency by 30\%.
+                                    \item Streamlined data ingestion into Neo4j, applying graph algorithms for efficient data exploration, improving query performance by 50\%.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                                    {Email Automation Marketing Tool}
+                                {\normalfont{ - }}{}{}
+                                    \item Developed an email automation tool, increasing outreach efficiency by 70\% through streamlined job application processes.
+                                    \item Integrated RESTful APIs to manage a comprehensive contact database, enhancing data accuracy and retrieval speed by 25\%.
+                                    \item Demonstrated full{-}stack development skills, delivering a robust solution that improved user engagement by 40\%.
+                            \end{rSubsection}
+            \end{rSection}
+
+%==== TECHNICAL STRENGTHS SECTION ====%
+    \begin{rSection}{Technical Skills}
+        \begin{tabular}{ @{} l @{\hspace{1ex}} l }
+                                \textbf{Programming Languages}: PHP, SQL, HTML, CSS, JavaScript\\
+                                \textbf{Web Development}: WordPress Development, Custom Themes, Plugins, Responsive Design, Accessibility Standards\\
+                                \textbf{Web Optimization}: Performance Optimization, SEO, Debugging, Problem{-}Solving\\
+                                \textbf{Client and Project Management}: Client Communication, Project Management, Collaboration, Technical Translation\\
+                        \textbf{Certifications:} 
+                                            \href{}{\textbf{Google Cloud Platform Associate Cloud Engineer}},\\
+                                 
+        \end{tabular}
+    \end{rSection}
+ 
+
+% ACHIEVEMENTS SECTION
+    \begin{rSection}{Achievements}
+        \begin{rSubsection}{}{}{}
+                            \item Developed a custom WordPress theme that improved website load time by 50\% and increased user engagement by 30\%.
+                            \item Engineered a plugin for integrating third{-}party APIs, enhancing website functionality and user experience.
+                            \item Optimized a WordPress site for SEO, resulting in a 40\% increase in organic traffic within three months.
+                            \item Led a project to redesign a client’s website, ensuring full responsiveness and accessibility compliance, which resulted in a 25\% increase in mobile user retention.
+                            \item Successfully debugged and resolved complex PHP and JavaScript issues, improving site stability and performance.
+                            \item Collaborated with a team of designers to create visually compelling and user{-}friendly web interfaces, receiving positive client feedback.
+                            \item Presented a project proposal to a major client, securing a contract worth \$50,000 by effectively communicating technical concepts in layman's terms.
+                            \item Managed a team of developers to deliver a high{-}quality web application on time and within budget, enhancing client satisfaction.
+                    \end{rSubsection}
+    \end{rSection}
+
+\newcommand\myfontsize{\fontsize{0.1pt}{0.1pt}\selectfont} \myfontsize \color{white}
+WordPress Development, custom themes, plugins, third{-}party APIs, performance optimization, SEO, responsive design, accessibility standards, HTML, CSS, JavaScript, PHP, SQL, problem{-}solving, debugging, client communication, project management, WordPress Development, custom themes, plugins, third{-}party APIs, performance optimization, SEO, responsive design, accessibility standards, HTML, CSS, JavaScript, PHP, SQL, problem{-}solving, debugging, client communication, project management, {artificial intelligence engineer, azure cognitive services exp, azure services, core azure services, azure cognitive and generative ai, genai, aws,  gcp, java, clean, efficient, maintainable code, react, front end, back end, ai solutions, data analysis, pretrained models, automl, software development principles, version control, testing, continuous integration and deployment, python, javascript, prompt engieering, frontend, backend, html, css, api, angular, development, machine learning, artificial intelligence, deep learning, data warehouse, data modeling, data extraction, data transformation, data loading, sql, etl, data quality, data governance, data privacy, data visualization, data controls, privacy, security, compliance, sla, aws, terabyte to petabyte scale data, full stack software development, cloud, security engineering, security architecture, ai/ml engineering, technical product management, microsoft office, google suite, visualization tools, scripting, coding, programming languages, analytical skills, collaboration, leadership, communication, presentation skills, computer vision, senior, ms or ph.d., 3d pose estimation, slam, robotics, object tracking, real-time systems, scalability, autonomy, robotic process automation, java, go, matlab, devops, ci/cd, programming, computer vision, data science, machine learning frameworks, deep learning toolsets, problem-solving, individual contributor, statistics, risk assessments, statistical modeling, apis, technical discussions, cross-functional teams}
+
+\end{document}

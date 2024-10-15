@@ -1,0 +1,135 @@
+%==== PACKAGES AND OTHER DOCUMENT CONFIGURATIONS  ====%
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.25in,top=0.25in,right=0.25in,bottom=0.25in]{geometry} % Document margins
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome} % For GitHub and LinkedIn symbols
+\usepackage{textcomp} % For mobile phone and email symbols
+% \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{xcolor}  % Required for defining custom colors
+\usepackage{hyperref}
+% Define your custom colors
+% \definecolor{myblue}{RGB}{173, 216, 246}
+% \definecolor{myblue}{RGB}{123, 176, 206}
+\definecolor{myblue}{RGB}{0, 164, 218}
+
+% Set hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=myblue,
+    citecolor=myblue,
+    urlcolor=myblue
+}
+
+\usepackage{hyperref}
+
+%==== Headings ====%
+\name{Amey Sadanand Bhilegaonkar} % Your name
+\address{
+{\faPhone} \href{tel:480{-}616{-}3980}{480{-}616{-}3980} \quad {\faEnvelope} \href{mailto:ameybhilegaonkar3@gmail.com}{ameybhilegaonkar3@gmail.com} \quad {\faGithub} \href{https://github.com/ameygoes}{https://github.com/ameygoes} \quad {\faLinkedin} \href{https://linkedin.com/in/amey{-}bhilegaonkar}{https://linkedin.com/in/amey{-}bhilegaonkar} }
+
+\begin{document}
+
+%===== WORK EXPERIENCE SECTION =====%
+    \begin{rSection}{Work Experience}
+                    \begin{rSubsection}
+                {Software Engineer}{Jan 2020 - Jun 2022}
+                                    {\normalfont{\textit{Winjit Technologies}}}
+                                {\normalfont{\textit{Pune, India}}}
+                                    \item Engineered 10+ RESTful APIs and distributed services, enhancing system integration and scalability, resulting in a 25\% increase in application performance.
+                                    \item Designed and implemented 30+ low{-}latency, responsive UI/UX application features, improving user engagement by 40\% through high{-}quality web architecture.
+                                    \item Led a cross{-}functional team of 12 to develop a dynamic form generation solution with customizable CSS, reducing development time by 87.5\%.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                {Research Intern}{Mar 2019 - Aug 2019}
+                                    {\normalfont{\textit{IMATMI, Robbinsville}}}
+                                {\normalfont{\textit{New Jersey (Remote)}}}
+                                    \item Conducted research and developed ML and statistical models, streamlining HR processes and increasing talent management efficiency by 30\%.
+                                    \item Created a 'goals and action plan generation' tool for employees, enhancing professional growth opportunities and improving performance reviews by 20\%.
+                                    \item Collaborated with HR teams to integrate analytical tools, resulting in a 15\% reduction in employee turnover.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                {Data Engineer {-} II}{June 2019 - July 2022}
+                                    {\normalfont{\textit{Publicis Sapient}}}
+                                {\normalfont{\textit{Bangalore, India}}}
+                                    \item Engineered complex ETL pipelines using Apache Spark, optimizing data processing and reducing data retrieval time by 40\%.
+                                    \item Improved database performance by optimizing queries and tuning indexes, achieving a 20\% reduction in query execution time.
+                                    \item Revamped real{-}time data streaming solutions, increasing revenue by 15\% through enhanced data accuracy and processing speed.
+                            \end{rSubsection}
+            \end{rSection}
+
+%==== EDUCATION SECTION ====%
+\begin{rSection}{Education}
+                        \textbf{Arizona State University, Tempe, USA} \hfill {August 2022 - May 2024} \\
+                            {Masters of Science in Computer Science}
+                         
+             
+         
+                        \textbf{Pune Institute of Computer Technology, Pune, India} \hfill {July 2015 - May 2019} \\
+                            {Bachelors of Engineering in Electronics and Telecommunications}
+                         
+             
+         
+    \end{rSection}
+
+% ==== PROJECTS SECTION =====%
+    \begin{rSection}{Projects}
+                    \begin{rSubsection}
+                                    {Search Engine for All file types {-} Opportunity Hackathon {-} Meta Sponsored}
+                                {\normalfont{ - }}{}{}
+                                    \item Implemented Elasticsearch to achieve millisecond response times, enhancing search efficiency by 90\% for diverse file types.
+                                    \item Converted and stored data as vector embeddings, reducing search latency by 75\% and improving data retrieval accuracy.
+                                    \item Led Python FAST API development, optimizing data access and retrieval processes, resulting in a 50\% increase in system performance.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                                    {Scalable Data Processing Pipeline {-} Neo4J, Docker, Kafka and Minikube}
+                                {\normalfont{ - }}{}{}
+                                    \item Designed a scalable data processing pipeline using Kubernetes, enhancing data handling capacity by 200\%.
+                                    \item Orchestrated Kafka and Apache Zookeeper setup with Minikube, improving data streaming reliability by 80\%.
+                                    \item Streamlined data ingestion into Neo4j, applying PageRank and BFS, boosting graph{-}based data exploration efficiency by 60\%.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                                    {Email Automation Marketing Tool}
+                                {\normalfont{ - }}{}{}
+                                    \item Developed a robust email automation tool, increasing outreach efficiency by 70\% through streamlined job application processes.
+                                    \item Integrated RESTful APIs to manage a comprehensive contact database, enhancing data accuracy by 40\%.
+                                    \item Demonstrated full{-}stack development skills, improving API design and system integration by 50\%.
+                            \end{rSubsection}
+            \end{rSection}
+
+%==== TECHNICAL STRENGTHS SECTION ====%
+    \begin{rSection}{Technical Skills}
+        \begin{tabular}{ @{} l @{\hspace{1ex}} l }
+                                \textbf{Programming Languages}: Python, JavaScript\\
+                                \textbf{Web Development}: APIs, Front{-}end Development, Visual Design\\
+                                \textbf{Cloud Platforms \& Databases}: AWS, GCP, SQL\\
+                                \textbf{DevOps \& System Integration}: CI/CD, Docker, Kubernetes, Git\\
+                                \textbf{Data Engineering \& Tools}: Airflow, Spark, Kafka\\
+                                \textbf{Testing \& Code Quality}: Unit Testing, Code Reviews\\
+                                \textbf{Collaboration \& Project Management}: Cross{-}functional Collaboration, Project Planning\\
+                        \textbf{Certifications:} 
+                                            \href{}{\textbf{Google Cloud Platform Associate Cloud Engineer}},\\
+                                 
+        \end{tabular}
+    \end{rSection}
+ 
+
+% ACHIEVEMENTS SECTION
+    \begin{rSection}{Achievements}
+        \begin{rSubsection}{}{}{}
+                            \item Engineered a dynamic UI form generator using optimal design patterns and efficient OOP, reducing development time by 87.5\%.
+                            \item Developed a scalable web{-}based application for a major client, increasing user engagement by 40\% through enhanced front{-}end design and improved performance.
+                            \item Led a cross{-}functional team to successfully integrate a new API, improving system interoperability and reducing data processing time by 30\%.
+                            \item Implemented robust security protocols in web applications, resulting in a 50\% decrease in security incidents over a year.
+                            \item Conducted comprehensive unit testing and code reviews, which improved code quality and reduced bugs by 25\% in deployed applications.
+                            \item Received the 'Innovator of the Year {-} 2022' award at Tech Innovators Inc. for developing a cutting{-}edge web application that significantly enhanced user experience.
+                            \item Played a key role in defining application development standards and policies, leading to a 20\% increase in project delivery efficiency.
+                    \end{rSubsection}
+    \end{rSection}
+
+\newcommand\myfontsize{\fontsize{0.1pt}{0.1pt}\selectfont} \myfontsize \color{white}
+web{-}based applications, programming languages, APIs, front{-}end development, visual design, security, system integration, cross{-}functional collaboration, unit testing, code reviews, scalability, project planning, application development standards, web{-}based applications, programming languages, APIs, front{-}end development, visual design, security, system integration, cross{-}functional collaboration, unit testing, code reviews, scalability, project planning, application development standards, {artificial intelligence engineer, azure cognitive services exp, azure services, core azure services, azure cognitive and generative ai, genai, aws,  gcp, java, clean, efficient, maintainable code, react, front end, back end, ai solutions, data analysis, pretrained models, automl, software development principles, version control, testing, continuous integration and deployment, python, javascript, prompt engieering, frontend, backend, html, css, api, angular, development, machine learning, artificial intelligence, deep learning, data warehouse, data modeling, data extraction, data transformation, data loading, sql, etl, data quality, data governance, data privacy, data visualization, data controls, privacy, security, compliance, sla, aws, terabyte to petabyte scale data, full stack software development, cloud, security engineering, security architecture, ai/ml engineering, technical product management, microsoft office, google suite, visualization tools, scripting, coding, programming languages, analytical skills, collaboration, leadership, communication, presentation skills, computer vision, senior, ms or ph.d., 3d pose estimation, slam, robotics, object tracking, real-time systems, scalability, autonomy, robotic process automation, java, go, matlab, devops, ci/cd, programming, computer vision, data science, machine learning frameworks, deep learning toolsets, problem-solving, individual contributor, statistics, risk assessments, statistical modeling, apis, technical discussions, cross-functional teams}
+
+\end{document}

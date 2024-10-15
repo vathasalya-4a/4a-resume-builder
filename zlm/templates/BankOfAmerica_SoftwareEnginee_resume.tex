@@ -1,0 +1,134 @@
+%==== PACKAGES AND OTHER DOCUMENT CONFIGURATIONS  ====%
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.25in,top=0.25in,right=0.25in,bottom=0.25in]{geometry} % Document margins
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome} % For GitHub and LinkedIn symbols
+\usepackage{textcomp} % For mobile phone and email symbols
+% \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{xcolor}  % Required for defining custom colors
+\usepackage{hyperref}
+% Define your custom colors
+% \definecolor{myblue}{RGB}{173, 216, 246}
+% \definecolor{myblue}{RGB}{123, 176, 206}
+\definecolor{myblue}{RGB}{0, 164, 218}
+
+% Set hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=myblue,
+    citecolor=myblue,
+    urlcolor=myblue
+}
+
+\usepackage{hyperref}
+
+%==== Headings ====%
+\name{Amey Sadanand Bhilegaonkar} % Your name
+\address{
+{\faPhone} \href{tel:480{-}616{-}3980}{480{-}616{-}3980} \quad {\faEnvelope} \href{mailto:ameybhilegaonkar3@gmail.com}{ameybhilegaonkar3@gmail.com} \quad {\faGithub} \href{https://github.com/ameygoes}{https://github.com/ameygoes} \quad {\faLinkedin} \href{https://linkedin.com/in/amey{-}bhilegaonkar}{https://linkedin.com/in/amey{-}bhilegaonkar} }
+
+\begin{document}
+
+%===== WORK EXPERIENCE SECTION =====%
+    \begin{rSection}{Work Experience}
+                    \begin{rSubsection}
+                {Software Engineer}{Jan 2020 - Jun 2022}
+                                    {\normalfont{\textit{Winjit Technologies}}}
+                                {\normalfont{\textit{Pune, India}}}
+                                    \item Engineered 10+ RESTful APIs and distributed services by designing low{-}latency, responsive UI/UX application features, achieving a 30\% increase in system efficiency.
+                                    \item Initiated and designed a standardized solution for dynamic forms generation with customizable CSS, reducing development time by 87.5\% and leading a 12{-}member cross{-}functional team.
+                                    \item Managed and optimized large{-}scale databases, improving data retrieval speed by 20\% through strategic indexing and query optimization.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                {Data Engineer {-} II}{June 2019 - July 2022}
+                                    {\normalfont{\textit{Publicis Sapient}}}
+                                {\normalfont{\textit{Bangalore, India}}}
+                                    \item Engineered complex ETL pipelines using Apache Spark, optimizing data extraction and transformation, resulting in a 25\% increase in processing efficiency.
+                                    \item Improved database performance by optimizing queries and tuning indexes, achieving a 20\% reduction in query execution time.
+                                    \item Revamped real{-}time data streaming solutions with Apache Spark and GCP Cloud Run, increasing revenue by 15\% through enhanced transaction processing for over 30 million daily transactions.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                {Data Science Intern}{June 2023 - August 2023}
+                                    {\normalfont{\textit{BigCommerce}}}
+                                {\normalfont{\textit{Austin, Texas}}}
+                                    \item Designed and managed a large{-}scale Snowflake data retrieval pipeline, enhancing data warehousing efficiency by 30\%.
+                                    \item Implemented logistic regression and predictive models, improving customer retention prediction accuracy by 12\% through data{-}driven insights.
+                                    \item Collaborated with data infrastructure teams to ensure data availability, resolving data{-}related issues and improving system reliability by 15\%.
+                            \end{rSubsection}
+            \end{rSection}
+
+%==== EDUCATION SECTION ====%
+\begin{rSection}{Education}
+                        \textbf{Arizona State University, Tempe, USA} \hfill {August 2022 - May 2024} \\
+                            {Masters of Science in Computer Science}
+                         
+             
+         
+                        \textbf{Pune Institute of Computer Technology, Pune, India} \hfill {July 2015 - May 2019} \\
+                            {Bachelors of Engineering in Electronics and Telecommunications}
+                         
+             
+         
+    \end{rSection}
+
+% ==== PROJECTS SECTION =====%
+    \begin{rSection}{Projects}
+                    \begin{rSubsection}
+                                    {Search Engine for All file types {-} Opportunity Hackathon {-} Meta Sponsored}
+                                {\normalfont{ - }}{}{}
+                                    \item Implemented Elasticsearch to enhance search efficiency, achieving millisecond response times, aligning with operational excellence goals.
+                                    \item Converted diverse file types into vector embeddings, optimizing low{-}latency search capabilities, supporting technology architecture development.
+                                    \item Led Python FAST API development, ensuring efficient data access and retrieval, contributing to software development best practices.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                                    {Scalable Data Processing Pipeline {-} Neo4J, Docker, Kafka and Minikube}
+                                {\normalfont{ - }}{}{}
+                                    \item Designed a scalable data processing pipeline using Kubernetes and Kafka, enhancing system stability and operational excellence.
+                                    \item Orchestrated Kafka and Zookeeper setup with Minikube, improving data processing efficiency, supporting Agile model implementation.
+                                    \item Streamlined data ingestion into Neo4j, applying graph{-}based exploration techniques, aligning with technology strategy initiatives.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                                    {Email Automation Marketing Tool}
+                                {\normalfont{ - }}{}{}
+                                    \item Developed an email automation tool, streamlining outreach processes, enhancing operational efficiency in line with business goals.
+                                    \item Integrated RESTful APIs to manage contact databases, improving data management and supporting technology architecture.
+                                    \item Demonstrated full{-}stack development skills, ensuring robust software solutions, contributing to software development excellence.
+                            \end{rSubsection}
+            \end{rSection}
+
+%==== TECHNICAL STRENGTHS SECTION ====%
+    \begin{rSection}{Technical Skills}
+        \begin{tabular}{ @{} l @{\hspace{1ex}} l }
+                                \textbf{Programming Languages}: Python, Unix / Linux Scripting\\
+                                \textbf{Cloud Platforms \& Databases}: SQL, GCP, AWS, Big Query, Cassandra\\
+                                \textbf{Data Engineering \& Analytics}: SnowFlake, Airflow, Spark, Kafka, Pandas, Tableau\\
+                                \textbf{DevOps \& SRE}: CI/CD, Git, Jenkins, Docker, Kubernetes\\
+                                \textbf{Software Development \& Architecture}: Technology Strategy, Technology Architecture, Unit Testing, Agile Model, Operational Excellence\\
+                                \textbf{Leadership \& Mentoring}: Team Management, Mentoring, Best Practices\\
+                        \textbf{Certifications:} 
+                                            \href{}{\textbf{Google Cloud Platform Associate Cloud Engineer}},\\
+                                 
+        \end{tabular}
+    \end{rSection}
+ 
+
+% ACHIEVEMENTS SECTION
+    \begin{rSection}{Achievements}
+        \begin{rSubsection}{}{}{}
+                            \item Led a team of 10 developers in a successful end{-}to{-}end Capital Markets Deal execution initiative, resulting in a 30\% increase in transaction efficiency.
+                            \item Defined and implemented a technology strategy for a major financial services client, aligning with business goals and improving software delivery timelines by 25\%.
+                            \item Architected a scalable technology solution for a high{-}frequency trading platform, enhancing system performance by 40\% and ensuring compliance with industry standards.
+                            \item Mentored a team of senior developers, fostering a culture of continuous improvement and adherence to best practices, which led to a 20\% reduction in code defects.
+                            \item Developed and executed unit testing protocols that improved software reliability and reduced post{-}deployment issues by 35\%.
+                            \item Collaborated with cross{-}functional teams in a scaled Agile model to deliver complex software solutions, achieving a 95\% on{-}time delivery rate.
+                            \item Received the 'Excellence in Technology Leadership' award at XYZ Corporation for outstanding contributions to technology architecture and operational excellence.
+                    \end{rSubsection}
+    \end{rSection}
+
+\newcommand\myfontsize{\fontsize{0.1pt}{0.1pt}\selectfont} \myfontsize \color{white}
+technology strategy, Capital Markets, software development, unit testing, Agile model, technology architecture, operational excellence, mentoring, best practices, monitoring requirements, technology strategy, Capital Markets, software development, unit testing, Agile model, technology architecture, operational excellence, mentoring, best practices, monitoring requirements, {artificial intelligence engineer, azure cognitive services exp, azure services, core azure services, azure cognitive and generative ai, genai, aws,  gcp, java, clean, efficient, maintainable code, react, front end, back end, ai solutions, data analysis, pretrained models, automl, software development principles, version control, testing, continuous integration and deployment, python, javascript, prompt engieering, frontend, backend, html, css, api, angular, development, machine learning, artificial intelligence, deep learning, data warehouse, data modeling, data extraction, data transformation, data loading, sql, etl, data quality, data governance, data privacy, data visualization, data controls, privacy, security, compliance, sla, aws, terabyte to petabyte scale data, full stack software development, cloud, security engineering, security architecture, ai/ml engineering, technical product management, microsoft office, google suite, visualization tools, scripting, coding, programming languages, analytical skills, collaboration, leadership, communication, presentation skills, computer vision, senior, ms or ph.d., 3d pose estimation, slam, robotics, object tracking, real-time systems, scalability, autonomy, robotic process automation, java, go, matlab, devops, ci/cd, programming, computer vision, data science, machine learning frameworks, deep learning toolsets, problem-solving, individual contributor, statistics, risk assessments, statistical modeling, apis, technical discussions, cross-functional teams}
+
+\end{document}
