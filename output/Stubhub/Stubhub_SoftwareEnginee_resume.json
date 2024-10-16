@@ -1,0 +1,178 @@
+{
+  "personal": {
+    "name": "Amey Sadanand Bhilegaonkar",
+    "phone": "480-616-3980",
+    "email": "ameybhilegaonkar3@gmail.com",
+    "github": "https://github.com/ameygoes",
+    "linkedin": "https://linkedin.com/in/amey-bhilegaonkar"
+  },
+  "work_experience": [
+    {
+      "role": "Software Engineer",
+      "company": "Winjit Technologies",
+      "location": "Pune, India",
+      "from_date": "Jan 2020",
+      "to_date": "Jun 2022",
+      "description": [
+        "Engineered 10+ RESTful APIs and distributed services, enhancing system scalability and functionality, resulting in a 20% increase in user engagement.",
+        "Initiated and designed a dynamic forms generation solution with customizable CSS, reducing development time by 87.5% and improving team efficiency.",
+        "Led a cross-functional team of 12 in developing low-latency, responsive UI/UX features, improving application performance and user satisfaction by 30%."
+      ]
+    },
+    {
+      "role": "Data Engineer - II",
+      "company": "Publicis Sapient",
+      "location": "Bangalore, India",
+      "from_date": "June 2019",
+      "to_date": "July 2022",
+      "description": [
+        "Engineered complex ETL pipelines using Apache Spark, optimizing data processing and reducing latency by 15%, enhancing data-driven decision-making.",
+        "Revamped real-time data streaming solutions with Apache Spark and GCP Cloud Run, increasing revenue by 15% through improved transaction processing.",
+        "Collaborated with cross-functional teams to manage large-scale data processing tasks, improving resource utilization and system performance by 20%."
+      ]
+    },
+    {
+      "role": "Data Science Intern",
+      "company": "BigCommerce",
+      "location": "Austin, Texas",
+      "from_date": "June 2023",
+      "to_date": "August 2023",
+      "description": [
+        "Designed and managed a Snowflake data retrieval pipeline, improving data warehousing efficiency and reducing retrieval time by 25%.",
+        "Implemented logistic regression models, enhancing customer retention prediction accuracy by 12%, supporting strategic marketing initiatives.",
+        "Collaborated with data infrastructure teams to ensure data availability, resolving data-related issues and improving system reliability by 15%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Search Engine for All file types - Opportunity Hackathon - Meta Sponsored",
+      "type": "Hackathon Project",
+      "link": "",
+      "resources": null,
+      "from_date": "",
+      "to_date": "",
+      "description": [
+        "Engineered Elasticsearch implementation to achieve millisecond response times, enhancing search functionality and user experience.",
+        "Converted diverse file types into vector embeddings, optimizing search capabilities and reducing latency significantly.",
+        "Led Python FAST API development, streamlining data access and retrieval, improving system scalability and efficiency."
+      ]
+    },
+    {
+      "name": "Scalable Data Processing Pipeline - Neo4J, Docker, Kafka and Minikube",
+      "type": "Project",
+      "link": "",
+      "resources": null,
+      "from_date": "",
+      "to_date": "",
+      "description": [
+        "Designed a scalable data processing pipeline using Kubernetes and Docker, enhancing system robustness and availability.",
+        "Orchestrated Kafka and Zookeeper setup with Minikube, facilitating seamless data flow and real-time processing.",
+        "Streamlined data ingestion into Neo4j, applying graph algorithms for advanced data exploration, improving analytical capabilities."
+      ]
+    },
+    {
+      "name": "Email Automation Marketing Tool",
+      "type": "Project",
+      "link": "",
+      "resources": null,
+      "from_date": "",
+      "to_date": "",
+      "description": [
+        "Developed a robust email automation tool, enhancing outreach efficiency and networking capabilities by 40%.",
+        "Integrated RESTful APIs to manage a comprehensive contact database, improving data accessibility and user engagement.",
+        "Demonstrated full-stack development expertise, optimizing API design for seamless integration and functionality."
+      ]
+    }
+  ],
+  "skill_section": [
+    {
+      "name": "Programming Languages",
+      "skills": [
+        "Python",
+        "Java",
+        "C#"
+      ]
+    },
+    {
+      "name": "Cloud Platforms & Databases",
+      "skills": [
+        "AWS",
+        "GCP",
+        "SQL",
+        "Big Query",
+        "Cassandra"
+      ]
+    },
+    {
+      "name": "Data Engineering & Tools",
+      "skills": [
+        "Airflow",
+        "Spark",
+        "Kafka",
+        "Pandas"
+      ]
+    },
+    {
+      "name": "DevOps & SRE",
+      "skills": [
+        "CI/CD",
+        "Git",
+        "Jenkins",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Software Architecture & Development",
+      "skills": [
+        "Scalability",
+        "Functionality",
+        "User-Centric Design"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Masters of Science in Computer Science",
+      "university": "Arizona State University, Tempe, USA",
+      "from_date": "August 2022",
+      "to_date": "May 2024",
+      "courses": [
+        "Software Architecture",
+        "Scalable Systems Design",
+        "Advanced Programming in Java",
+        "Machine Learning and AI",
+        "User-Centric Design"
+      ]
+    },
+    {
+      "degree": "Bachelors of Engineering in Electronics and Telecommunications",
+      "university": "Pune Institute of Computer Technology, Pune, India",
+      "from_date": "July 2015",
+      "to_date": "May 2019",
+      "courses": [
+        "Data Structures and Algorithms",
+        "Object-Oriented Programming",
+        "Digital Signal Processing",
+        "Microprocessors and Microcontrollers",
+        "Network Theory"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Cloud Platform Associate Cloud Engineer",
+      "by": "Google",
+      "link": ""
+    }
+  ],
+  "achievements": [
+    "Engineered a dynamic UI form generator using optimal design patterns and efficient OOP, reducing development time by 87.5%, enhancing user-centric design.",
+    "Led a cross-functional team to develop a scalable ticketing platform feature, increasing system functionality and user engagement by 30%.",
+    "Designed and implemented a robust software architecture for a mission-critical system, improving scalability and reducing downtime by 40%.",
+    "Collaborated with a team to pioneer a new real-time ticketing service, integrating user feedback to drive continuous improvement and enhance user experience.",
+    "Received the 'Innovator of the Year - 2022' award for developing a Python-based solution that improved data processing speed by 50%."
+  ],
+  "keywords": "software development, C#, Java, Python, Go, software architecture, scalability, functionality, collaboration, continuous improvement, user-centric design"
+}

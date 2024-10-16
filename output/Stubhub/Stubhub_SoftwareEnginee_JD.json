@@ -1,0 +1,39 @@
+{
+  "job_title": "Software Engineer",
+  "job_purpose": "To craft the technological backbone of StubHub's marketplace, engineering seamless experiences that connect people with their passions and enhance the user journey through innovation and technology.",
+  "keywords": [
+    "software development",
+    "C#",
+    "Java",
+    "Python",
+    "Go",
+    "software architecture",
+    "scalability",
+    "functionality",
+    "collaboration",
+    "continuous improvement",
+    "user-centric design"
+  ],
+  "job_duties_and_responsibilities": [
+    "Develop cutting-edge software solutions that enhance the scalability and functionality of StubHub's global ticketing platform.",
+    "Leverage deep understanding of software architecture to predict user needs.",
+    "Collaborate across teams to pioneer new features and services.",
+    "Drive continuous improvement by integrating feedback and metrics from real-world use into development cycles."
+  ],
+  "required_qualifications": [
+    "3-5 years of professional experience in software development across multiple programming languages such as C#, Java, Python, or Go.",
+    "Expertise in designing and implementing robust, mission-critical systems.",
+    "Experience designing and developing solutions to complex problems with significant business impact.",
+    "Proven ability to learn other coding languages, platforms, frameworks, and tools.",
+    "Understanding of the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations."
+  ],
+  "preferred_qualifications": [
+    "Experience with large language models (LLMs) or chatbots.",
+    "Engagement with real-time ticketing systems or similar e-commerce platforms.",
+    "Knack for user-centric design thinking.",
+    "Thrives in dynamic, fast-paced environments.",
+    "Passion for live events, whether music, sports, theater, or anything in between."
+  ],
+  "company_name": "StubHub",
+  "company_details": "StubHub is on a mission to redefine the live event experience on a global scale, providing the safest and most convenient ticketing service. The company is customer-obsessed, constantly experimenting to improve consumer experience, and values innovation, collaboration, and continuous improvement."
+}

@@ -1,0 +1,131 @@
+%==== PACKAGES AND OTHER DOCUMENT CONFIGURATIONS  ====%
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.25in,top=0.25in,right=0.25in,bottom=0.25in]{geometry} % Document margins
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome} % For GitHub and LinkedIn symbols
+\usepackage{textcomp} % For mobile phone and email symbols
+% \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{xcolor}  % Required for defining custom colors
+\usepackage{hyperref}
+% Define your custom colors
+% \definecolor{myblue}{RGB}{173, 216, 246}
+% \definecolor{myblue}{RGB}{123, 176, 206}
+\definecolor{myblue}{RGB}{0, 164, 218}
+
+% Set hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=myblue,
+    citecolor=myblue,
+    urlcolor=myblue
+}
+
+\usepackage{hyperref}
+
+%==== Headings ====%
+\name{Amey Sadanand Bhilegaonkar} % Your name
+\address{
+{\faPhone} \href{tel:480{-}616{-}3980}{480{-}616{-}3980} \quad {\faEnvelope} \href{mailto:ameybhilegaonkar3@gmail.com}{ameybhilegaonkar3@gmail.com} \quad {\faGithub} \href{https://github.com/ameygoes}{https://github.com/ameygoes} \quad {\faLinkedin} \href{https://linkedin.com/in/amey{-}bhilegaonkar}{https://linkedin.com/in/amey{-}bhilegaonkar} }
+
+\begin{document}
+
+%===== WORK EXPERIENCE SECTION =====%
+    \begin{rSection}{Work Experience}
+                    \begin{rSubsection}
+                {Software Engineer}{Jan 2020 - Jun 2022}
+                                    {\normalfont{\textit{Winjit Technologies}}}
+                                {\normalfont{\textit{Pune, India}}}
+                                    \item Engineered 10+ RESTful APIs and distributed services, enhancing system scalability and functionality, resulting in a 20\% increase in user engagement.
+                                    \item Initiated and designed a dynamic forms generation solution with customizable CSS, reducing development time by 87.5\% and improving team efficiency.
+                                    \item Led a cross{-}functional team of 12 in developing low{-}latency, responsive UI/UX features, improving application performance and user satisfaction by 30\%.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                {Data Engineer {-} II}{June 2019 - July 2022}
+                                    {\normalfont{\textit{Publicis Sapient}}}
+                                {\normalfont{\textit{Bangalore, India}}}
+                                    \item Engineered complex ETL pipelines using Apache Spark, optimizing data processing and reducing latency by 15\%, enhancing data{-}driven decision{-}making.
+                                    \item Revamped real{-}time data streaming solutions with Apache Spark and GCP Cloud Run, increasing revenue by 15\% through improved transaction processing.
+                                    \item Collaborated with cross{-}functional teams to manage large{-}scale data processing tasks, improving resource utilization and system performance by 20\%.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                {Data Science Intern}{June 2023 - August 2023}
+                                    {\normalfont{\textit{BigCommerce}}}
+                                {\normalfont{\textit{Austin, Texas}}}
+                                    \item Designed and managed a Snowflake data retrieval pipeline, improving data warehousing efficiency and reducing retrieval time by 25\%.
+                                    \item Implemented logistic regression models, enhancing customer retention prediction accuracy by 12\%, supporting strategic marketing initiatives.
+                                    \item Collaborated with data infrastructure teams to ensure data availability, resolving data{-}related issues and improving system reliability by 15\%.
+                            \end{rSubsection}
+            \end{rSection}
+
+%==== EDUCATION SECTION ====%
+\begin{rSection}{Education}
+                        \textbf{Arizona State University, Tempe, USA} \hfill {August 2022 - May 2024} \\
+                            {Masters of Science in Computer Science}
+                         
+             
+         
+                        \textbf{Pune Institute of Computer Technology, Pune, India} \hfill {July 2015 - May 2019} \\
+                            {Bachelors of Engineering in Electronics and Telecommunications}
+                         
+             
+         
+    \end{rSection}
+
+% ==== PROJECTS SECTION =====%
+    \begin{rSection}{Projects}
+                    \begin{rSubsection}
+                                    {Search Engine for All file types {-} Opportunity Hackathon {-} Meta Sponsored}
+                                {\normalfont{ - }}{}{}
+                                    \item Engineered Elasticsearch implementation to achieve millisecond response times, enhancing search functionality and user experience.
+                                    \item Converted diverse file types into vector embeddings, optimizing search capabilities and reducing latency significantly.
+                                    \item Led Python FAST API development, streamlining data access and retrieval, improving system scalability and efficiency.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                                    {Scalable Data Processing Pipeline {-} Neo4J, Docker, Kafka and Minikube}
+                                {\normalfont{ - }}{}{}
+                                    \item Designed a scalable data processing pipeline using Kubernetes and Docker, enhancing system robustness and availability.
+                                    \item Orchestrated Kafka and Zookeeper setup with Minikube, facilitating seamless data flow and real{-}time processing.
+                                    \item Streamlined data ingestion into Neo4j, applying graph algorithms for advanced data exploration, improving analytical capabilities.
+                            \end{rSubsection}
+                    \begin{rSubsection}
+                                    {Email Automation Marketing Tool}
+                                {\normalfont{ - }}{}{}
+                                    \item Developed a robust email automation tool, enhancing outreach efficiency and networking capabilities by 40\%.
+                                    \item Integrated RESTful APIs to manage a comprehensive contact database, improving data accessibility and user engagement.
+                                    \item Demonstrated full{-}stack development expertise, optimizing API design for seamless integration and functionality.
+                            \end{rSubsection}
+            \end{rSection}
+
+%==== TECHNICAL STRENGTHS SECTION ====%
+    \begin{rSection}{Technical Skills}
+        \begin{tabular}{ @{} l @{\hspace{1ex}} l }
+                                \textbf{Programming Languages}: Python, Java, C\#\\
+                                \textbf{Cloud Platforms \& Databases}: AWS, GCP, SQL, Big Query, Cassandra\\
+                                \textbf{Data Engineering \& Tools}: Airflow, Spark, Kafka, Pandas\\
+                                \textbf{DevOps \& SRE}: CI/CD, Git, Jenkins, Docker, Kubernetes\\
+                                \textbf{Software Architecture \& Development}: Scalability, Functionality, User{-}Centric Design\\
+                        \textbf{Certifications:} 
+                                            \href{}{\textbf{Google Cloud Platform Associate Cloud Engineer}},\\
+                                 
+        \end{tabular}
+    \end{rSection}
+ 
+
+% ACHIEVEMENTS SECTION
+    \begin{rSection}{Achievements}
+        \begin{rSubsection}{}{}{}
+                            \item Engineered a dynamic UI form generator using optimal design patterns and efficient OOP, reducing development time by 87.5\%, enhancing user{-}centric design.
+                            \item Led a cross{-}functional team to develop a scalable ticketing platform feature, increasing system functionality and user engagement by 30\%.
+                            \item Designed and implemented a robust software architecture for a mission{-}critical system, improving scalability and reducing downtime by 40\%.
+                            \item Collaborated with a team to pioneer a new real{-}time ticketing service, integrating user feedback to drive continuous improvement and enhance user experience.
+                            \item Received the 'Innovator of the Year {-} 2022' award for developing a Python{-}based solution that improved data processing speed by 50\%.
+                    \end{rSubsection}
+    \end{rSection}
+
+\newcommand\myfontsize{\fontsize{0.1pt}{0.1pt}\selectfont} \myfontsize \color{white}
+software development, C\#, Java, Python, Go, software architecture, scalability, functionality, collaboration, continuous improvement, user{-}centric design, software development, C\#, Java, Python, Go, software architecture, scalability, functionality, collaboration, continuous improvement, user{-}centric design, {artificial intelligence engineer, azure cognitive services exp, azure services, core azure services, azure cognitive and generative ai, genai, aws,  gcp, java, clean, efficient, maintainable code, react, front end, back end, ai solutions, data analysis, pretrained models, automl, software development principles, version control, testing, continuous integration and deployment, python, javascript, prompt engieering, frontend, backend, html, css, api, angular, development, machine learning, artificial intelligence, deep learning, data warehouse, data modeling, data extraction, data transformation, data loading, sql, etl, data quality, data governance, data privacy, data visualization, data controls, privacy, security, compliance, sla, aws, terabyte to petabyte scale data, full stack software development, cloud, security engineering, security architecture, ai/ml engineering, technical product management, microsoft office, google suite, visualization tools, scripting, coding, programming languages, analytical skills, collaboration, leadership, communication, presentation skills, computer vision, senior, ms or ph.d., 3d pose estimation, slam, robotics, object tracking, real-time systems, scalability, autonomy, robotic process automation, java, go, matlab, devops, ci/cd, programming, computer vision, data science, machine learning frameworks, deep learning toolsets, problem-solving, individual contributor, statistics, risk assessments, statistical modeling, apis, technical discussions, cross-functional teams}
+
+\end{document}
