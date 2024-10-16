@@ -6,6 +6,8 @@ import shutil
 from zlm import AutoApplyModel
 from zlm.prompts.resume_prompt import RESUME_WRITER_PERSONA  # Import RESUME_WRITER_PERSONA
 
+# Using FastAPI for server 
+
 app = FastAPI()
 
 # CORS configuration
