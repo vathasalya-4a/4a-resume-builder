@@ -1,0 +1,54 @@
+{
+  "job_title": "Senior Full-Stack Engineer",
+  "job_purpose": "Lead the development of services, frameworks, and tools essential for the operation of CoinDesk Indices, CoinDesk Media, and CoinDesk Events products within the Bullish CoinDesk Engineering group.",
+  "keywords": [
+    "Full-Stack Engineer",
+    "JavaScript",
+    "CSS",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Tailwind",
+    "Node.js",
+    "Python",
+    "microservices",
+    "mentorship",
+    "code quality",
+    "automation",
+    "SEO",
+    "Google Tag Manager",
+    "Google Ads Manager",
+    "Google Analytics",
+    "version control",
+    "Git",
+    "trunk-based development",
+    "AWS",
+    "GCP",
+    "mobile development",
+    "React Native"
+  ],
+  "job_duties_and_responsibilities": [
+    "Design, build, and maintain microservices, frameworks, and tools using JavaScript, CSS, React, Next.js, TypeScript, Tailwind, Node.js, and Python.",
+    "Collaborate closely with other development teams to identify pain points and improve development processes and system reliability.",
+    "Proactively identify design flaws and devise plans to address them.",
+    "Promote strong engineering standards within a multidisciplinary team environment.",
+    "Provide mentorship and guidance to team members.",
+    "Ensure code quality, organization, and automation."
+  ],
+  "required_qualifications": [
+    "Bachelor's Degree or higher in Computer Science or a related field, or equivalent professional experience.",
+    "5+ years of experience in software development, preferably with consumer-based websites.",
+    "Strong knowledge of JavaScript, CSS, and standard front-end technologies (e.g., HTML, Bootstrap).",
+    "Proficiency in React, Next.js, TypeScript, and Tailwind.",
+    "Experience with Node.js and backend development technologies.",
+    "Proficiency in Python.",
+    "Understanding of SEO best practices and experience with Google Tag Manager, Google Ads Manager, and Google Analytics.",
+    "Experience with version control systems (e.g., Git) and trunk-based development.",
+    "Knowledge of cloud platforms like AWS or GCP."
+  ],
+  "preferred_qualifications": [
+    "Experience with mobile development using React Native."
+  ],
+  "company_name": "Bullish",
+  "company_details": "Bullish is focused on developing products and services for the digital assets sector, combining deep liquidity, automated market making, and industry-leading security and compliance to increase the accessibility of digital assets for investors. Their mission is to make trading with digital assets more rewarding and secure, with a vision to be the most innovative, respected, and trusted leader in crypto."
+}

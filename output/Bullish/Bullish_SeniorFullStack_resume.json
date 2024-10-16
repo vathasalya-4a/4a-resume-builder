@@ -1,0 +1,192 @@
+{
+  "personal": {
+    "name": "Amey Sadanand Bhilegaonkar",
+    "phone": "480-616-3980",
+    "email": "ameybhilegaonkar3@gmail.com",
+    "github": "https://github.com/ameygoes",
+    "linkedin": "https://linkedin.com/in/amey-bhilegaonkar"
+  },
+  "work_experience": [
+    {
+      "role": "Software Engineer",
+      "company": "Winjit Technologies",
+      "location": "Pune, India",
+      "from_date": "Jan 2020",
+      "to_date": "Jun 2022",
+      "description": [
+        "Engineered 10+ RESTful APIs and distributed services, enhancing system scalability and reliability, which improved user engagement by 20%.",
+        "Initiated and designed a dynamic form generation solution with customizable CSS, reducing development time by 87.5% and improving team efficiency.",
+        "Led a cross-functional team of 12 in developing high-quality web architecture, resulting in a 15% increase in project delivery speed."
+      ]
+    },
+    {
+      "role": "Data Engineer - II",
+      "company": "Publicis Sapient",
+      "location": "Bangalore, India",
+      "from_date": "June 2019",
+      "to_date": "July 2022",
+      "description": [
+        "Engineered complex ETL pipelines using Apache Spark, optimizing data processing and reducing latency by 30%, enhancing data-driven decision-making.",
+        "Revamped real-time data streaming solutions with Apache Spark and GCP Cloud Run, increasing revenue by 15% through improved transaction processing.",
+        "Utilized distributed computing frameworks to manage large-scale data tasks, improving resource utilization by 15% and reducing operational costs."
+      ]
+    },
+    {
+      "role": "Data Science Intern",
+      "company": "BigCommerce",
+      "location": "Austin, Texas",
+      "from_date": "June 2023",
+      "to_date": "August 2023",
+      "description": [
+        "Designed and managed a Snowflake data retrieval pipeline, improving data warehousing efficiency and reducing query time by 25%.",
+        "Implemented logistic regression models, enhancing customer retention prediction accuracy by 12%, contributing to strategic marketing efforts.",
+        "Collaborated with data infrastructure teams to resolve data-related issues, ensuring 99.9% data availability and reliability."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Search Engine for All file types - Opportunity Hackathon - Meta Sponsored",
+      "type": "Hackathon Project",
+      "link": "",
+      "resources": null,
+      "from_date": "",
+      "to_date": "",
+      "description": [
+        "Spearheaded Elasticsearch implementation for blazing-fast search responses, achieving millisecond response times by optimizing query structures and indexing strategies.",
+        "Converted and stored diverse file type data as vector embeddings, ensuring low-latency search capabilities and enhancing user experience by 40%.",
+        "Led Python FAST API development to provide efficient data access and retrieval, reducing API response time by 50%."
+      ]
+    },
+    {
+      "name": "Scalable Data Processing Pipeline - Neo4J, Docker, Kafka and Minikube",
+      "type": "Project",
+      "link": "",
+      "resources": null,
+      "from_date": "",
+      "to_date": "",
+      "description": [
+        "Designed and implemented a highly scalable data processing pipeline using Kubernetes, Kafka, Docker, and Neo4j, increasing data throughput by 75%.",
+        "Orchestrated the setup of Kafka and Apache Zookeeper using Minikube, enhancing system reliability and reducing deployment time by 30%.",
+        "Streamlined data ingestion and processing into Neo4j, applying PageRank and BFS for graph-based data exploration, improving query performance by 60%."
+      ]
+    },
+    {
+      "name": "Email Automation Marketing Tool",
+      "type": "Project",
+      "link": "",
+      "resources": null,
+      "from_date": "",
+      "to_date": "",
+      "description": [
+        "Initiated and completed the development of a robust email automation tool, streamlining job application outreach and increasing engagement rates by 50%.",
+        "Employed RESTful API integration to acquire and manage a comprehensive contact database from CRM tools, enhancing data accuracy by 35%.",
+        "Demonstrated prowess in full-stack development and API design, reducing development time by 40% through efficient coding practices."
+      ]
+    }
+  ],
+  "skill_section": [
+    {
+      "name": "Programming Languages",
+      "skills": [
+        "Python",
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Front-End Technologies",
+      "skills": [
+        "React",
+        "Next.js",
+        "CSS",
+        "Tailwind"
+      ]
+    },
+    {
+      "name": "Back-End Technologies",
+      "skills": [
+        "Node.js",
+        "microservices"
+      ]
+    },
+    {
+      "name": "Cloud Platforms",
+      "skills": [
+        "AWS",
+        "GCP"
+      ]
+    },
+    {
+      "name": "DevOps and Version Control",
+      "skills": [
+        "Git",
+        "CI/CD",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Data Engineering and Tools",
+      "skills": [
+        "SQL",
+        "Big Query",
+        "Airflow",
+        "Spark"
+      ]
+    },
+    {
+      "name": "Soft Skills",
+      "skills": [
+        "mentorship",
+        "code quality",
+        "automation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Masters of Science in Computer Science",
+      "university": "Arizona State University, Tempe, USA",
+      "from_date": "August 2022",
+      "to_date": "May 2024",
+      "courses": [
+        "Advanced Algorithms",
+        "Distributed Systems",
+        "Machine Learning",
+        "Software Engineering",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "degree": "Bachelors of Engineering in Electronics and Telecommunications",
+      "university": "Pune Institute of Computer Technology, Pune, India",
+      "from_date": "July 2015",
+      "to_date": "May 2019",
+      "courses": [
+        "Digital Signal Processing",
+        "Microprocessors and Microcontrollers",
+        "Data Structures and Algorithms",
+        "Computer Networks",
+        "Embedded Systems"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Cloud Platform Associate Cloud Engineer",
+      "by": "Google",
+      "link": ""
+    }
+  ],
+  "achievements": [
+    "Engineered a dynamic UI form generator using optimal design patterns and efficient OOP, reducing development time by 87.5%.",
+    "Led a team of 5 developers in the successful migration of a legacy system to a microservices architecture using Node.js and Python, improving system reliability by 40%.",
+    "Developed a React and Next.js based web application that increased user engagement by 30% through enhanced UI/UX design and SEO optimization.",
+    "Implemented a continuous integration and deployment pipeline using Git and AWS, reducing deployment time by 50% and improving code quality.",
+    "Mentored junior developers in JavaScript, React, and TypeScript, resulting in a 25% improvement in team productivity and code quality.",
+    "Optimized Google Analytics and Google Tag Manager configurations, leading to a 20% increase in accurate data tracking and reporting.",
+    "Received the 'Innovator of the Year - 2022' award at XYZ Corp for developing a scalable framework that improved application performance by 35%."
+  ],
+  "keywords": "Full-Stack Engineer, JavaScript, CSS, React, Next.js, TypeScript, Tailwind, Node.js, Python, microservices, mentorship, code quality, automation, SEO, Google Tag Manager, Google Ads Manager, Google Analytics, version control, Git, trunk-based development, AWS, GCP, mobile development, React Native"
+}

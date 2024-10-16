@@ -24,7 +24,7 @@ DEFAULT_LLM_MODEL = "gemini-1.5-flash"
 
 LLM_MAPPING = {
     'GPT': {
-        "api_env": "",
+        "api_env": "OPEN_API_KEY",
         "model": ["gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-4-1106-preview", "gpt-3.5-turbo"], 
     },
     'Gemini': {

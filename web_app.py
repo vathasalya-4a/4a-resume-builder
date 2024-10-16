@@ -1,66 +1,75 @@
-from flask import Flask, request, jsonify, send_file
+from fastapi import FastAPI, File, Form, UploadFile, HTTPException
+from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
 import os
-import base64
 import shutil
-import zipfile
 from zlm import AutoApplyModel
-from zlm.utils.utils import read_file
-from zlm.variables import LLM_MAPPING
-from flask_cors import CORS
+from zlm.prompts.resume_prompt import RESUME_WRITER_PERSONA  # Import RESUME_WRITER_PERSONA
 
+app = FastAPI()
 
-app = Flask(__name__)
-CORS(app)
+# CORS configuration
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Adjust this based on your security preferences
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Ensure necessary directories exist
 if os.path.exists("output"):
     shutil.rmtree("output")
-
 os.makedirs("uploads", exist_ok=True)
 os.makedirs("output", exist_ok=True)
 
-@app.route('/upload', methods=['POST'])
-def upload_resume():
+@app.post("/upload")
+async def upload_resume(
+    resume: UploadFile = File(...),
+    job_description: str = Form(...),
+    api_key: str = Form(...),
+    provider: str = Form(...),
+    model: str = Form(...),
+    prompt: str = Form(None)  # Optional prompt
+):
     try:
-        # Extract files and form data
-        if 'resume' not in request.files or 'job_description' not in request.form:
-            return jsonify({"error": "Missing resume or job description"}), 400
-
-        resume = request.files['resume']
-        job_description = request.form['job_description']
-        api_key = request.form['api_key']
-        provider = request.form['provider']
-        model = request.form['model']
-
         # Save the uploaded resume file
         resume_path = os.path.join("uploads", resume.filename)
-        resume.save(resume_path)
+        with open(resume_path, "wb") as f:
+            f.write(await resume.read())
 
-        # Process the resume using AutoApplyModel
-        resume_llm = AutoApplyModel(api_key=api_key, provider=provider, model=model, downloads_dir="output")
+        # Append the prompt to the RESUME_WRITER_PERSONA if provided
+        system_prompt = RESUME_WRITER_PERSONA
+        if prompt:
+            system_prompt += f"\n\n{prompt}"
+
+        # Process the resume using AutoApplyModel with the appended prompt
+        resume_llm = AutoApplyModel(api_key=api_key, provider=provider, model=model, downloads_dir="output", system_prompt=system_prompt)
         user_data = resume_llm.user_data_extraction(resume_path)
         job_details, _ = resume_llm.job_details_extraction(job_site_content=job_description)
 
         if not user_data or not job_details:
-            return jsonify({"error": "Failed to process resume or job description."}), 500
+            raise HTTPException(status_code=500, detail="Failed to process resume or job description.")
 
         # Build the resume based on the user data and job description
-        resume_path, _ = resume_llm.resume_builder(job_details, user_data)
+        final_resume_path, _ = resume_llm.resume_builder(job_details, user_data)
 
         # Return the generated resume as a PDF file
-        return send_file(resume_path, as_attachment=True, mimetype='application/pdf')
+        return FileResponse(final_resume_path, media_type="application/pdf", filename="resume.pdf")
 
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        raise HTTPException(status_code=500, detail=str(e))
 
-@app.route('/models', methods=['GET'])
-def get_models():
-    # Fetch the list of models for the given provider
-    provider = request.args.get('provider', default=None, type=str)
+
+@app.get("/models")
+async def get_models(provider: str):
     if not provider or provider not in LLM_MAPPING:
-        return jsonify({"error": "Invalid or missing provider"}), 400
+        raise HTTPException(status_code=400, detail="Invalid or missing provider")
+    
     models = LLM_MAPPING[provider]['model']
-    return jsonify({"models": models}), 200
+    return {"models": models}
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8504)
+# Running the app:
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8504)

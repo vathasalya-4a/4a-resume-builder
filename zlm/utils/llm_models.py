@@ -24,7 +24,7 @@ class ChatGPT:
     def __init__(self, api_key, model, system_prompt):
         if system_prompt.strip():
             self.system_prompt = {"role": "system", "content": system_prompt}
-        self.client = OpenAI(api_key='')
+        self.client = OpenAI(api_key=api_key)
         self.model = model
     
     def get_response(self, prompt, expecting_longer_output=False, need_json_output=False):
