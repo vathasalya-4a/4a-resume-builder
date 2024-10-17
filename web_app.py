@@ -6,6 +6,7 @@ import zipfile
 from zlm import AutoApplyModel
 from zlm.utils.utils import read_file
 from zlm.variables import LLM_MAPPING
+from zlm.prompts.resume_prompt import RESUME_WRITER_PERSONA
 from flask_cors import CORS
 
 
@@ -28,6 +29,7 @@ def upload_resume():
 
         resume = request.files['resume']
         job_description = request.form['job_description']
+        recruiter_prompt = request.form['recruiter_prompt']
         api_key = request.form['api_key']
         provider = request.form['provider']
         model = request.form['model']
@@ -36,9 +38,12 @@ def upload_resume():
         resume_path = os.path.join("uploads", resume.filename)
         resume.save(resume_path)
 
+        final_prompt = RESUME_WRITER_PERSONA + recruiter_prompt
+        
         # Process the resume using AutoApplyModel
-        resume_llm = AutoApplyModel(api_key=api_key, provider=provider, model=model, downloads_dir="output")
+        resume_llm = AutoApplyModel(api_key=api_key, provider=provider, model=model, downloads_dir="output", system_prompt=final_prompt)
         user_data = resume_llm.user_data_extraction(resume_path)
+        print(user_data)
         job_details, _ = resume_llm.job_details_extraction(job_site_content=job_description)
 
         if not user_data or not job_details:

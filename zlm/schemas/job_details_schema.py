@@ -1,13 +1,3 @@
-'''
------------------------------------------------------------------------
-File: schemas/job_details_schema.py
-Creation Time: Aug 17th 2024, 8:18 pm
-Author: Saurabh Zinjad
-Developer Email: saurabhzinjad@gmail.com
-Copyright (c) 2023-2024 Saurabh Zinjad. All rights reserved | https://github.com/Ztrimus
------------------------------------------------------------------------
-'''
-
 from typing import List
 from pydantic import BaseModel, Field
 
