@@ -78,38 +78,38 @@ Dear Hiring Manager,
 Sincerely,
 [My Name from the provided JSON]"""
 
-RESUME_DETAILS_EXTRACTOR = """<objective>
-Parse a text-formatted resume efficiently and extract diverse applicant's data into a structured JSON format.
+RESUME_DETAILS_EXTRACTOR = """
+<objective>
+Parse a text-formatted resume efficiently and extract only the following data into a structured JSON format: Name, Summary, Experience, Skills, Education, Certifications.
 </objective>
 
 <input>
 The following text is the applicant's resume in plain text format:
-
 {resume_text}
 </input>
 
 <instructions>
 Follow these steps to extract and structure the resume information:
 
-1. Analyze Structure:
-   - Examine the text-formatted resume to identify key sections (e.g., personal information, education, experience, skills, certifications).
-   - Note any unique formatting or organization within the resume.
+1. Extract Information:
+   - Only extract the following sections: Name, Summary, Experience, Skills, Education, Certifications.
+   - Ignore all other sections of the resume.
+   - For Experience: Include job titles, company names, dates of employment, and job descriptions.
+   - For Education: Include degrees, institutions, and dates.
+   - For Certifications: Include certificate names, institutions, and dates.
 
-2. Extract Information:
-   - Systematically parse each section, extracting relevant details.
-   - Pay attention to dates, titles, organizations, and descriptions.
-
-3. Handle Variations:
+2. Handle Variations:
    - Account for different resume styles, formats, and section orders.
    - Adapt the extraction process to accurately capture data from various layouts.
 
-5. Optimize Output:
+3. Optimize Output:
    - Handle missing or incomplete information appropriately (use null values or empty arrays/objects as needed).
    - Standardize date formats, if applicable.
 
-6. Validate:
+4. Validate:
    - Review the extracted data for consistency and completeness.
-   - Ensure all required fields are populated if the information is available in the resume.
+   - Ensure all required fields (Name, Summary, Experience, Skills, Education, Certifications) are captured if the information is available in the resume.
 </instructions>
 
-{format_instructions}"""
+{format_instructions}
+"""

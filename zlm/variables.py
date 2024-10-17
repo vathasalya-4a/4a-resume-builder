@@ -1,5 +1,5 @@
-from zlm.prompts.sections_prompt import EXPERIENCE, SKILLS, PROJECTS, EDUCATIONS, CERTIFICATIONS, ACHIEVEMENTS
-from zlm.schemas.sections_schemas import Achievements, Certifications, Educations, Experiences, Projects, SkillSections
+from zlm.prompts.sections_prompt import EXPERIENCE, SKILLS, EDUCATIONS, CERTIFICATIONS
+from zlm.schemas.sections_schemas import Certifications, Educations, Experiences, SkillSections
 
 GPT_EMBEDDING_MODEL = "text-embedding-ada-002"
 # text-embedding-3-large, text-embedding-3-small
@@ -30,8 +30,6 @@ LLM_MAPPING = {
 section_mapping = {
     "work_experience": {"prompt":EXPERIENCE, "schema": Experiences},
     "skill_section": {"prompt":SKILLS, "schema": SkillSections},
-    "projects": {"prompt":PROJECTS, "schema": Projects},
     "education": {"prompt":EDUCATIONS, "schema": Educations},
     "certifications": {"prompt":CERTIFICATIONS, "schema": Certifications},
-    "achievements": {"prompt":ACHIEVEMENTS, "schema": Achievements},
 }

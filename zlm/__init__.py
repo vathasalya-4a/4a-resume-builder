@@ -44,9 +44,9 @@ class AutoApplyModel:
     """
 
     def __init__(
-        self, api_key: str = None, provider: str = None, model: str = None, downloads_dir: str = utils.get_default_download_folder(), system_prompt: str = RESUME_WRITER_PERSONA
+        self, api_key: str = None, provider: str = None, model: str = None, downloads_dir: str = utils.get_default_download_folder(), system_prompt: str = None
     ):
-        self.system_prompt = system_prompt
+        self.system_prompt = system_prompt if system_prompt else RESUME_WRITER_PERSONA
         self.provider = DEFAULT_LLM_PROVIDER if provider is None or provider.strip() == "" else provider
         self.model = DEFAULT_LLM_MODEL if model is None or model.strip() == "" else model
         self.downloads_dir = utils.get_default_download_folder() if downloads_dir is None or downloads_dir.strip() == "" else downloads_dir
@@ -79,6 +79,7 @@ class AutoApplyModel:
 
         json_parser = JsonOutputParser(pydantic_object=ResumeSchema)
 
+
         prompt = PromptTemplate(
             template=RESUME_DETAILS_EXTRACTOR,
             input_variables=["resume_text"],
@@ -86,7 +87,9 @@ class AutoApplyModel:
             ).format(resume_text=resume_text)
 
         resume_json = self.llm.get_response(prompt=prompt, need_json_output=True)
+ 
         return resume_json
+
 
     @utils.measure_execution_time
     def user_data_extraction(self, user_data_path: str = demo_data_path, is_st=False):
@@ -227,21 +230,19 @@ class AutoApplyModel:
             if is_st: st.toast("Generating Resume Details...")
 
             resume_details = dict()
+            print(user_data)
 
             # Personal Information Section
             if is_st: st.toast("Processing Resume's Personal Info Section...")
             resume_details["personal"] = { 
                 "name": user_data["name"], 
-                "phone": user_data["phone"], 
-                "email": user_data["email"],
-                "github": user_data["media"]["github"], 
-                "linkedin": user_data["media"]["linkedin"]
+                "summary": user_data["summary"]
                 }
             st.markdown("**Personal Info Section**")
             st.write(resume_details)
 
             # Other Sections
-            for section in ['work_experience', 'projects', 'skill_section', 'education', 'certifications', 'achievements']:
+            for section in ['work_experience', 'skill_section', 'education', 'certifications']:
                 section_log = f"Processing Resume's {section.upper()} Section..."
                 if is_st: st.toast(section_log)
 
@@ -274,9 +275,9 @@ class AutoApplyModel:
             utils.write_json(resume_path, resume_details)
             resume_path = resume_path.replace(".json", ".pdf")
             # st.write(f"resume_path: {resume_path}")
-
-            resume_latex = latex_to_pdf(resume_details, resume_path)
-            # st.write(f"resume_pdf_path: {resume_pdf_path}")
+            
+            """            resume_latex = latex_to_pdf(resume_details, resume_path)
+            # st.write(f"resume_pdf_path: {resume_pdf_path}") """
 
             return resume_path, resume_details
         except Exception as e:
