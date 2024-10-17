@@ -1,12 +1,3 @@
-'''
------------------------------------------------------------------------
-File: data_extraction.py
-Creation Time: Oct 31st 2023 2:17 pm
-Author: Saurabh Zinjad, Amey Bhilegonkar
-Developer Email: zinjadsaurabh1997@gmail.com, abhilega@asu.edu
-Copyright (c) 2023 Saurabh Zinjad. All rights reserved | GitHub: Ztrimus, ameygoes
------------------------------------------------------------------------
-'''
 import re
 import json
 import PyPDF2

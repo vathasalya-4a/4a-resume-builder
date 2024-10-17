@@ -1,12 +1,3 @@
-'''
------------------------------------------------------------------------
-File: __init__.py
-Creation Time: Feb 8th 2024, 2:59 pm
-Author: Saurabh Zinjad
-Developer Email: saurabhzinjad@gmail.com
-Copyright (c) 2023-2024 Saurabh Zinjad. All rights reserved | https://github.com/Ztrimus
------------------------------------------------------------------------
-'''
 import os
 import json
 import re
@@ -59,15 +50,8 @@ class AutoApplyModel:
         self.provider = DEFAULT_LLM_PROVIDER if provider is None or provider.strip() == "" else provider
         self.model = DEFAULT_LLM_MODEL if model is None or model.strip() == "" else model
         self.downloads_dir = utils.get_default_download_folder() if downloads_dir is None or downloads_dir.strip() == "" else downloads_dir
-
-        if api_key is None or api_key.strip() == "os":
-                api_env = LLM_MAPPING[self.provider]["api_env"]
-                if api_env != None and api_env.strip() != "":
-                    self.api_key = os.environ.get(LLM_MAPPING[self.provider]["api_env"]) 
-                else:
-                    self.api_key = None
-        else:
-            self.api_key = api_key
+        
+        self.api_key = api_key
 
         self.llm = self.get_llm_instance()
     

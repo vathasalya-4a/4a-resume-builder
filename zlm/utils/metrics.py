@@ -1,12 +1,3 @@
-'''
------------------------------------------------------------------------
-File: metrics.py
-Creation Time: Jan 13th 2024, 8:42 pm
-Author: Saurabh Zinjad
-Developer Email: saurabhzinjad@gmail.com
-Copyright (c) 2023-2024 Saurabh Zinjad. All rights reserved | https://github.com/Ztrimus
------------------------------------------------------------------------
-'''
 import re
 import json
 import math

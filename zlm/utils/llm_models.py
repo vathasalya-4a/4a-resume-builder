@@ -1,12 +1,3 @@
-'''
------------------------------------------------------------------------
-File: LLM.py
-Creation Time: Nov 1st 2023 1:40 am
-Author: Saurabh Zinjad
-Developer Email: zinjadsaurabh1997@gmail.com
-Copyright (c) 2023 Saurabh Zinjad. All rights reserved | GitHub: Ztrimus
------------------------------------------------------------------------
-'''
 import json
 import textwrap
 import pandas as pd
@@ -24,7 +15,7 @@ class ChatGPT:
     def __init__(self, api_key, model, system_prompt):
         if system_prompt.strip():
             self.system_prompt = {"role": "system", "content": system_prompt}
-        self.client = OpenAI(api_key='')
+        self.client = OpenAI(api_key=api_key)
         self.model = model
     
     def get_response(self, prompt, expecting_longer_output=False, need_json_output=False):

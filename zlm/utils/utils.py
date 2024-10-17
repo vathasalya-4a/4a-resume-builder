@@ -1,13 +1,3 @@
-'''
------------------------------------------------------------------------
-File: utils.py
-Creation Time: Dec 6th 2023, 7:09 pm
-Author: Saurabh Zinjad
-Developer Email: zinjadsaurabh1997@gmail.com
-Copyright (c) 2023 Saurabh Zinjad. All rights reserved | GitHub: Ztrimus
------------------------------------------------------------------------
-'''
-
 import os
 import re
 import time

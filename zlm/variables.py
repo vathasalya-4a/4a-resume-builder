@@ -1,13 +1,3 @@
-'''
------------------------------------------------------------------------
-File: zlm/variables.py
-Creation Time: Aug 18th 2024, 5:26 am
-Author: Saurabh Zinjad
-Developer Email: saurabhzinjad@gmail.com
-Copyright (c) 2023-2024 Saurabh Zinjad. All rights reserved | https://github.com/Ztrimus
------------------------------------------------------------------------
-'''
-
 from zlm.prompts.sections_prompt import EXPERIENCE, SKILLS, PROJECTS, EDUCATIONS, CERTIFICATIONS, ACHIEVEMENTS
 from zlm.schemas.sections_schemas import Achievements, Certifications, Educations, Experiences, Projects, SkillSections
 
@@ -24,7 +14,7 @@ DEFAULT_LLM_MODEL = "gemini-1.5-flash"
 
 LLM_MAPPING = {
     'GPT': {
-        "api_env": "",
+        "api_env": "OPEN_API_KEY",
         "model": ["gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-4-1106-preview", "gpt-3.5-turbo"], 
     },
     'Gemini': {
