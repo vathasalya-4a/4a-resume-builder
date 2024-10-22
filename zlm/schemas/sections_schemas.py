@@ -9,14 +9,13 @@ class Certifications(BaseModel):
 
 class Education(BaseModel):
     university: str = Field(description="The name of the of the degree and institution where the degree was obtained with location.")
-    to_date: str = Field(description="The end date of the education period. e.g., May 2025")
 
 class Educations(BaseModel):
     education: List[Education] = Field(description="Educational qualifications, including degree, institution, dates, and relevant courses.")
 
 class SkillSection(BaseModel):
-    skill: str = Field(description="name or title of the skill group and competencies relevant to the job, such as programming languages, data science, tools & technologies, cloud & DevOps, full stack,  or soft skills.")
-    subskill: List[str] = Field(description="Specific skills or competencies within the skill group, such as Python, JavaScript, C#, SQL in programming languages.")
+    name: str = Field(description="name or title of the skill group and competencies relevant to the job, such as programming languages, data science, tools & technologies, cloud & DevOps, full stack,  or soft skills.")
+    skills: List[str] = Field(description="Specific skills or competencies within the skill group, such as Python, JavaScript, C#, SQL in programming languages.")
 
 class SkillSections(BaseModel):
     skill_section: List[SkillSection] = Field(description="Skill sections, each containing a group of skills and competencies relevant to the job.")

@@ -38,46 +38,6 @@ Note: Adapt these guidelines to each user's specific request, industry, and expe
 
 Goal: Create documents that not only pass ATS screenings but also compellingly demonstrate how the user can add immediate value to the prospective employer."""
 
-JOB_DETAILS_EXTRACTOR = """
-<task>
-Identify the key details from a job description and company overview to create a structured JSON output. Focus on extracting the most crucial and concise information that would be most relevant for tailoring a resume to this specific job.
-</task>
-
-<job_description>
-{job_description}
-</job_description>
-
-Note: The "keywords", "job_duties_and_responsibilities", and "required_qualifications" sections are particularly important for resume tailoring. Ensure these are as comprehensive and accurate as possible.
-
-{format_instructions}
-"""
-
-CV_GENERATOR = """<task>
-create a compelling, concise cover letter that aligns my resume/work information with the job description and company value. Analyze and match my qualifications with the job requirements. Then, create cover letter.
-</task>
-
-<job_description>
-{job_description}
-</job_description>
-
-<my_work_information>
-{my_work_information}
-</my_work_information>
-
-<guidelines>
-- Highlight my unique qualifications for this specific role and company culture in a concise bulleted list for easy readability.
-- Focus on the value I can bring to the employer, including 1-2 specific examples of relevant achievements.
-- Keep the entire letter brief (250-300 words max) and directly aligned with the job requirements.
-</guidelines>
-
-Do not repeat information verbatim from my resume. Instead, elaborate on or provide context for key points.
-
-# Output Format:
-Dear Hiring Manager,
-[Your response here]
-Sincerely,
-[My Name from the provided JSON]"""
-
 RESUME_DETAILS_EXTRACTOR = """
 <objective>
 Parse a text-formatted resume efficiently and extract only the following data into a structured JSON format: Name, Summary, Experience, Skills, Education, Certifications.
@@ -113,3 +73,18 @@ Follow these steps to extract and structure the resume information:
 
 {format_instructions}
 """
+
+JOB_DETAILS_EXTRACTOR = """
+<task>
+Identify the key details from a job description and company overview to create a structured JSON output. Focus on extracting the most crucial and concise information that would be most relevant for tailoring a resume to this specific job.
+</task>
+
+<job_description>
+{job_description}
+</job_description>
+
+Note: The "keywords", "job_duties_and_responsibilities", and "required_qualifications" sections are particularly important for resume tailoring. Ensure these are as comprehensive and accurate as possible.
+
+{format_instructions}
+"""
+

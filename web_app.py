@@ -4,7 +4,6 @@ import base64
 import shutil
 import zipfile
 from zlm import AutoApplyModel
-from zlm.utils.utils import read_file
 from zlm.variables import LLM_MAPPING
 from zlm.prompts.resume_prompt import RESUME_WRITER_PERSONA
 from flask_cors import CORS
